@@ -1,107 +1,238 @@
-html{
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+html {
     font-size: 16px;
 }
 
+
 /* Redimensión de fuente utilizando rem */
-p{
+
+p {
     font-size: 1rem;
 }
 
-h1{
+h1 {
     font-size: 3rem;
 }
 
-h2{
+h2 {
     font-size: 2rem;
 }
 
-h3{
+h3 {
     font-size: 1.6rem;
 }
 
-h4{
+h4 {
     font-size: 1.3rem;
 }
 
-h5{
+h5 {
     font-size: 1.15rem;
 }
 
-h6{
+h6 {
     font-size: 1.05rem;
 }
+
+
 /**************************/
 
+
 /* clases predefinidas */
+
 * {
     box-sizing: border-box;
 }
 
-body{
+body {
     margin: 0;
 }
 
+
 /* Clear floats after the columns */
+
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
+
+
 /* Diseño de columnas */
-.column-1{
+
+.column-1 {
     width: 100%;
     float: left;
+    height: 50vh;
 }
 
-.column-2{
+.column-1-footer {
+    width: 100%;
+    float: left;
+    height: 20vh;
+}
+
+.column-2 {
     width: 50%;
     float: left;
+    height: 75vh;
 }
 
-.column-3{
+.column-3 {
     width: 33.33%;
     float: left;
 }
 
-.column-4{
+.column-4 {
     width: 25%;
     float: left;
+    height: 45vh;
 }
 
-.column-5{
+.column-5 {
     width: 20%;
     float: left;
 }
 
-.column-6{
+.column-6 {
     width: 16.66%;
     float: left;
 }
 
-.column-75{
+.column-75 {
     width: 75%;
     float: left;
 }
 
+
 /* Otras clases */
+
+
 /* clase para centrar contenido en horizontal y vertical (lo centra respecto al elemento padre) */
-.flex{
+
+.flex {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.color-1 {
+    background-color: white;
+}
+
+.color-2 {
+    background-color: #f5eef5;
+}
+
+.color-3 {
+    background-color: #FAF5F3;
+}
+
+.color4 {
+    background-color: #f2f9f8;
+}
+
+.color-5 {
+    background-color: #000000;
+}
+
+#h1-first {
+    color: rgb(25, 135, 135);
+    font-size: 62.5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.padding-div1 {
+    padding-top: 2%;
+    padding-left: 7%;
+    padding-right: 13%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.padding-div2 {
+    padding-left: 7%;
+    padding-top: 5%;
+}
+
+#h3-div2 {
+    font-size: 30px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.h3-div2 {
+    font-size: 25px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#h2-div2 {
+    font-size: 50px;
+    color: gray;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#img-div2 {
+    height: 90%;
+    padding: 2.5%;
+    border-radius: 7%;
+    margin: auto;
+}
+
+.padding-div3y4-img {
+    padding-top: 5.5%;
+}
+
+.padding-div4 {
+    padding-left: 7%;
+    padding-right: 10%;
+}
+
+.padding-div3 {
+    padding-left: 12%;
+    padding-right: 10%;
+}
+
+.color-footer {
+    color: white;
+}
+
+#h1-footer {
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    padding-left: 7%;
+    padding-top: 5%;
+}
+
+.paddig-footer-1 {
+    padding-left: 7%;
+    padding-top: 7%;
+}
+
+.fontsize-footer-1 {
+    font-size: 10px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+b {
+    font-family: 'Quicksand', sans-serif;
+}
+
 @media only screen and (max-width: 600px) {
     /* column-2 pasará de tener 50% a 100% */
-    .column-2{
+    .column-2 {
         width: 100%;
     }
     /* column-3 pasará de tener 33.33% a 100% */
-    .column-3{
+    .column-3 {
         width: 100%;
     }
     /* column-4 pasará de tener 25% a 50% */
-    .column-4{
+    .column-4 {
         width: 50%;
+    }
+    #img-div2 {
+        display: block;
+        margin: 0px auto;
+        width: 90%;
     }
 }
